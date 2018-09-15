@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireStorageModule } from 'angularfire2/storage';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -34,7 +35,7 @@ const fbConfig = {
     LoginPage,
     RegisterPage,
     AccountPage,
-    FeedPage
+    FeedPage,
   ],
   imports: [
     BrowserModule,
@@ -52,11 +53,12 @@ const fbConfig = {
     LoginPage,
     RegisterPage,
     AccountPage,
-    FeedPage
+    FeedPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    InAppBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
