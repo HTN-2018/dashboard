@@ -14,5 +14,20 @@
 
 
 <ion-content padding>
-
+  <ion-card>
+      <ion-list>
+        <ion-item>
+          <h3 padding-top>Firebase UID</h3>
+          <p>{{uid}}</p>
+        </ion-item>
+      
+      <ion-item>
+        <h3 padding-top>Email</h3>
+        <p>{{email}}</p>
+      </ion-item>
+      </ion-list>
+  </ion-card>
+  <div padding>
+    <button ion-button (click)="logout()" item-left>Logout</button>
+  </div>
 </ion-content>

@@ -14,6 +14,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { AccountPage } from '../pages/account/account';
+import { FeedPage } from '../pages/feed/feed';
 
 const fbConfig = {
   apiKey: 'AIzaSyCktywTNMDVirFqEzxAhUMoPvvCWybTJN4',
@@ -32,7 +33,8 @@ const fbConfig = {
     TabsPage,
     LoginPage,
     RegisterPage,
-    AccountPage
+    AccountPage,
+    FeedPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ const fbConfig = {
     TabsPage,
     LoginPage,
     RegisterPage,
-    AccountPage
+    AccountPage,
+    FeedPage
   ],
   providers: [
     StatusBar,
