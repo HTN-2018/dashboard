@@ -1,3 +1,10 @@
 page-home {
+    #column-buttons{
+        display: flex;
+        flex-direction: column;
+    }
 
+    #column-buttons button{
+        flex: 1;
+    }
 }
