@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AccountPage } from '../account/account';
+import { FeedPage } from '../feed/feed';
 
 
 /**
@@ -18,6 +19,7 @@ import { AccountPage } from '../account/account';
 export class TabsPage {
 
   public accountTab: any = AccountPage;
+  public feedTab: any = FeedPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
