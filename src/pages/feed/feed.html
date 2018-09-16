@@ -17,4 +17,16 @@
   <div padding>
     <button ion-button (click)="linkJupyter()" item-left>Analyze with Jupyter</button>
   </div>
+  <ion-list>
+    <ion-item *ngFor="let d of data">
+      <ion-card>
+        <ion-list>
+          <ion-item style="margin-top: 10px; margin-bottom: 10px"><h1>{{ d['time'] }}</h1></ion-item>
+          <img [src]="d['download_url'] | async" style="height: 100px; width: 100px; margin-left: 10px"/>
+          <ion-item>{{ d['age_range'] }}</ion-item>
+          <ion-item>{{ d['gender'] }}</ion-item>
+        </ion-list>
+      </ion-card>
+    </ion-item>
+  </ion-list>
 </ion-content>
